@@ -1,0 +1,110 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page layout: center the generator card vertically and horizontally */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #931a97; /* purple background */
+    color: #000000;
+}
+
+/* Card container styling */
+.container {
+    width: 500px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Vertical layout inside the card */
+.generate-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading styles */
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+/* Accent for the word 'Random Password' */
+span {
+    color: #3c096c;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+/* Input area layout */
+.input-container {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Password input appearance */
+.input-container input {
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 20px 10px 20px 10px;
+    background: #e7e7e7;
+    color: #000000;
+    border: 1px solid #a7a7a7;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+}
+
+/* Copy button positioned inside the input area */
+.copy-btn {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+
+/* Generate button visual styles */
+.generate-btn {
+    margin: 15px 0;
+    width: 50%;
+    padding: 10px 20px 10px 20px;
+    height: 50px;
+    color: #ffffff;
+    background: #47107a;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Hover state for generate button */
+.generate-btn:hover {
+    background: #3c096c;
+}
+
+/* Icon inside the generate button is nudged left for alignment */
+.generate-btn i {
+    position: relative;
+    left: -12px;
+    font-size: 1rem;
+    font-weight: 600;
+}

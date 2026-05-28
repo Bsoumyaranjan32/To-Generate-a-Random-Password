@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Generate a Random Password</title>
+    <!-- External icon library used for copy and generate icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Local stylesheet for layout and styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main container that centers the card on the page -->
+    <div class="container">
+        <!-- Card that holds heading, input and buttons -->
+        <div class="generate-container">
+            <!-- Heading for the generator -->
+            <h2>Generate a<br><span>Random Password</span></h2>
+
+            <!-- Input area: shows generated password and copy button -->
+            <div class="input-container">
+                <div class="input-row">
+                    <!-- Text field where generated password is displayed -->
+                    <input type="text" id="password" placeholder="Password">
+                    <!-- Button to copy the password to clipboard -->
+                    <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+                </div>
+
+                <!-- Button row holds the generate action button -->
+                <div class="button-row">
+                    <button class="generate-btn"><i class="fa-solid fa-bolt"></i>Generate Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Script that contains the logic to generate and copy passwords -->
+    <script src="script.js"></script>
+</body>
+</html>
